@@ -2,9 +2,6 @@
 
 \usepackage{fancyhdr}
 \usepackage{extramarks}
-\usepackage{amsmath}
-\usepackage{amsthm}
-\usepackage{amsfonts}
 \usepackage{tikz}
 \usepackage[plain]{algorithm}
 \usepackage{algpseudocode}
@@ -25,7 +22,7 @@
 \linespread{1.1}
 
 \pagestyle{fancy}
-\lhead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}
+\lhead{\hmwkClass\ (\hmwkClassInstructor\): \hmwkTitle}
 \rhead{\firstxmark}
 \lfoot{\lastxmark}
 \cfoot{\thepage}
@@ -35,55 +32,6 @@
 
 \setlength\parindent{0pt}
 
-%
-% Create Problem Sections
-%
-
-\newcommand{\enterProblemHeader}[1]{
-    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
-    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
-}
-
-\newcommand{\exitProblemHeader}[1]{
-    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
-    \stepcounter{#1}
-    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
-}
-
-\setcounter{secnumdepth}{0}
-\newcounter{partCounter}
-\newcounter{homeworkProblemCounter}
-\setcounter{homeworkProblemCounter}{1}
-\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
-
-%
-% Homework Problem Environment
-%
-% This environment takes an optional argument. When given, it will adjust the
-% problem counter. This is useful for when the problems given for your
-% assignment aren't sequential. See the last 3 problems of this template for an
-% example.
-%
-\newenvironment{homeworkProblem}[1][-1]{
-    \ifnum#1>0
-        \setcounter{homeworkProblemCounter}{#1}
-    \fi
-    \section{Problem \arabic{homeworkProblemCounter}}
-    \setcounter{partCounter}{1}
-    \enterProblemHeader{homeworkProblemCounter}
-}{
-    \exitProblemHeader{homeworkProblemCounter}
-}
-
-%
-% Homework Details
-%   - Title
-%   - Due date
-%   - Class
-%   - Section/Time
-%   - Instructor
-%   - Author
-%
 
 \newcommand{\hmwkTitle}{\"Ubung\ \#1}
 \newcommand{\hmwkDueDate}{24. April 2022}
@@ -96,52 +44,26 @@
 %
 
 \title{
-    \vspace{2in}
     \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
     \normalsize\vspace{0.1in}\small{F\"allig\ am\ \hmwkDueDate\ um 23:59 Uhr}\\
-    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
-    \vspace{3in}
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ }}
+    \vspace{0.2in}
 }
 
 \author{\hmwkAuthorName}
 \date{}
 
-\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
-
-%
-% Various Helper Commands
-%
-
-% Useful for algorithms
-\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
-
-% For derivatives
-\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
-
-% For partial derivatives
-\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
-
-% Integral dx
-\newcommand{\dx}{\mathrm{d}x}
-
 % Alias for the Solution section header
 \newcommand{\solution}{\textbf{\large Solution}}
-
-% Probability commands: Expectation, Variance, Covariance, Bias
-\newcommand{\E}{\mathrm{E}}
-\newcommand{\Var}{\mathrm{Var}}
-\newcommand{\Cov}{\mathrm{Cov}}
-\newcommand{\Bias}{\mathrm{Bias}}
 
 \begin{document}
 
 \maketitle
 
-\pagebreak
+\section{Frage 1}
 
-\begin{homeworkProblem}
-    Dies ist unsere Abgabe.
 
-\end{homeworkProblem}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
 
 \end{document}
